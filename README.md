@@ -87,3 +87,9 @@ scripts/check.cjs           # 집계 및 CSV 검증
 ```
 
 글꼴은 Google Fonts의 DM Sans와 Noto Sans KR을 사용하며, 연결이 안 되면 시스템 글꼴로 표시됩니다.
+
+## 부산기 안내 챗봇
+
+오른쪽 하단에서 열고 상단을 드래그해 이동합니다. 키보드 사용자는 창 제목 영역에서 방향키로 이동할 수 있습니다. 등록된 답변과 키워드만 사용하며 생성형 AI API를 호출하지 않습니다. 대화는 sessionStorage에 유지하고 초기화 시 삭제합니다.
+
+답변은 `chatbot.json`, 문의 테이블 연결은 `inquiry-config.json`에서 관리합니다. `contact.html`과 챗봇의 문의 양식은 같은 저장 클라이언트를 사용합니다. 기존 문의 페이지의 실제 테이블과 개인정보 안내가 확인되기 전까지 접수는 비활성화 상태입니다. 확정할 안내 자료와 연결 방법은 [CHATBOT-CONTENT.md](CHATBOT-CONTENT.md)를 확인하세요.
